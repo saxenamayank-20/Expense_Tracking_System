@@ -1,13 +1,17 @@
 # 💰 Expense Tracking System
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.120.0-green.svg)](https://fastapi.tiangolo.com/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.51.0-red.svg)](https://streamlit.io/)
-[![MySQL](https://img.shields.io/badge/MySQL-Connector-orange.svg)](https://dev.mysql.com/doc/connector-python/en/)
+## 🔍 Description
 
 A modern, user-friendly expense tracking application built with **FastAPI** for the backend and **Streamlit** for the frontend. Track your expenses, analyze spending patterns, and manage your finances effortlessly!
 
-## ✨ Features
+## ⚙️ Tech Stack
+
+- **Python** (3.8+)
+- **FastAPI** (0.120.0) - High-performance backend REST API
+- **Streamlit** (1.51.0) - Beautiful, responsive web interface
+- **MySQL** - Robust data storage with persistent records
+
+## 🚀 Features
 
 - 📊 **Expense Management**: Add, update, and delete expenses with ease
 - 📈 **Analytics Dashboard**: Visualize spending patterns with interactive charts
@@ -16,9 +20,20 @@ A modern, user-friendly expense tracking application built with **FastAPI** for 
 - 💾 **MySQL Database**: Robust data storage with persistent records
 - 🚀 **FastAPI Backend**: High-performance REST API
 - 🎨 **Streamlit Frontend**: Beautiful, responsive web interface
-- 🔐 **User Authentication**: Secure user management system
 
-## 🏗️ Project Structure
+## 🧠 Learnings
+
+*Key learnings from this project:*
+- Building robust REST APIs with FastAPI
+- Database design and optimization with MySQL
+- Frontend development with Streamlit
+- User authentication and security best practices
+- Data visualization techniques
+- Testing strategies for backend applications
+
+## ▶️ How to Run
+
+### Project Structure
 
 ```
 Expense_Tracking_System/
@@ -40,15 +55,13 @@ Expense_Tracking_System/
 └── README.md
 ```
 
-## 🚀 Quick Start
-
 ### Prerequisites
 
 - Python 3.8 or higher
 - MySQL Server
 - Git
 
-### Installation
+### Installation & Setup
 
 1. **Clone the repository**:
    ```bash
@@ -56,7 +69,7 @@ Expense_Tracking_System/
    cd Expense-Tracking-System
    ```
 
-2. **Create a virtual environment** (recommended):
+2. **Create a virtual environment**:
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
@@ -69,23 +82,21 @@ Expense_Tracking_System/
 
 4. **Set up MySQL database**:
    - Create a new MySQL database
-   - Update database connection settings in `backend/database_helper.py`
+   - Update database connection settings in [backend/database_helper.py](backend/database_helper.py)
 
-### Running the Application
-
-1. **Start the FastAPI backend**:
+5. **Start the FastAPI backend**:
    ```bash
    uvicorn backend.server:app --reload
    ```
    The API will be available at `http://localhost:8000`
 
-2. **Start the Streamlit frontend**:
+6. **Start the Streamlit frontend** (in a new terminal):
    ```bash
    streamlit run frontend/app.py
    ```
    The app will open in your browser at `http://localhost:8501`
 
-## 📖 Usage
+## 📖 Usage Guide
 
 ### Adding Expenses
 - Navigate to the "Add/Update" tab
@@ -97,7 +108,9 @@ Expense_Tracking_System/
 - View spending summaries and charts
 - Filter by date range or category
 
-### API Endpoints
+### API Reference
+
+#### Endpoints:
 - `GET /expenses` - Retrieve all expenses
 - `POST /expenses` - Add a new expense
 - `PUT /expenses/{id}` - Update an expense
@@ -120,5 +133,7 @@ Contributions are welcome! Please follow these steps:
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+
+---
 
 ⭐ **Star this repo** if you find it helpful!
