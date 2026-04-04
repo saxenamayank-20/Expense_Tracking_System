@@ -23,7 +23,16 @@ def get_db_cursor(commit=False):
     cursor.close()
     connection.close()
 
-
+#=======================================================
+def fetch_user_by_username(username):
+    with get_db_cursor() as cursor:
+        cursor.execute(
+            "SELECT * FROM users WHERE username = %s",
+            (username,)
+        )
+        return cursor.fetchone()
+    
+#=======================================================
 def fetch_expenses_for_date(expense_date):
     logger.info(f"fetch_expenses_for_date called with {expense_date}")
     with get_db_cursor() as cursor:

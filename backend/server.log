@@ -114,3 +114,19 @@
 2026-01-08 19:37:19,925 - database_helper - INFO - insert_expense called with date: 2026-01-02, amount: 120.0, category: Food, notes: Ate Pav bhaji
 2026-01-08 19:37:19,950 - database_helper - INFO - insert_expense called with date: 2026-01-02, amount: 200.0, category: Shopping, notes: Bought Nike shoes
 2026-01-08 19:37:19,971 - database_helper - INFO - insert_expense called with date: 2026-01-02, amount: 450.0, category: Entertainment, notes: Went to a trip
+2026-01-09 11:28:22,157 - database_helper - INFO - fetch_expenses_for_date called with 2025-01-01
+2026-01-09 11:28:54,186 - database_helper - INFO - fetch_expenses_for_date called with 2026-01-09
+2026-01-09 11:29:43,783 - database_helper - INFO - fetch_expenses_for_date called with 2026-01-09
+2026-01-09 11:29:45,942 - database_helper - INFO - delete_expenses_for_date called with 2026-01-09
+2026-01-09 11:29:45,974 - database_helper - INFO - insert_expense called with date: 2026-01-09, amount: 110.0, category: Shopping, notes: Bought Toys
+2026-01-09 11:29:46,019 - database_helper - INFO - insert_expense called with date: 2026-01-09, amount: 150.0, category: Other, notes: Bought Medicines
+2026-01-09 11:30:04,055 - database_helper - INFO - fetch_expenses_for_date called with 2026-01-09
+2026-01-09 11:30:08,802 - database_helper - INFO - fetch_expenses_for_date called with 2026-01-09
+2026-01-09 11:30:18,343 - database_helper - INFO - fetch_expenses_for_date called with 2026-01-09
+2026-01-09 11:30:21,320 - database_helper - INFO - fetch_expenses_for_date called with 2026-01-09
+2026-01-09 11:30:23,447 - database_helper - INFO - fetch_expense_summary called with start: 2026-01-01 end: 2026-01-09
+2026-01-09 11:31:42,249 - database_helper - INFO - fetch_expenses_for_date called with 2026-01-09
+2026-01-09 11:31:44,388 - database_helper - INFO - fetch_expense_summary called with start: 2026-01-01 end: 2026-01-09
+2026-01-09 11:32:43,176 - database_helper - INFO - fetch_expenses_for_date called with 2026-01-09
+2026-01-09 11:32:48,914 - database_helper - INFO - fetch_expenses_for_date called with 2026-01-09
+2026-01-09 11:32:51,037 - database_helper - INFO - fetch_expense_summary called with start: 2025-11-01 end: 2026-01-09

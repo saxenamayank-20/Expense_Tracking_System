@@ -3,6 +3,7 @@ from datetime import date
 import database_helper
 from typing import List
 from pydantic import BaseModel
+from database_helper import fetch_user_by_username
 
 app = FastAPI()
 
@@ -17,7 +18,25 @@ class DateRange(BaseModel):
     start_date: date
     end_date: date
 
+# from fastapi import FastAPI, HTTPException
+# from database_helper import db_get_user
 
+app = FastAPI()
+#======================================================================#
+@app.post("/login")
+def login(username: str, password: str):
+    user = fetch_user_by_username(username)
+
+    if not user:
+        raise HTTPException(status_code=401, detail="Invalid user")
+
+    if password != user["password"]:  
+        raise HTTPException(status_code=401, detail="Wrong password")
+
+    return {"user_id": user["id"], 
+            "username": user["username"]}
+
+#================================================================#
 @app.get("/expenses/{expense_date}", response_model=List[Expense])
 def get_expenses(expense_date: date):
     expenses = database_helper.fetch_expenses_for_date(expense_date)
