@@ -1,8 +1,8 @@
 import mysql.connector
 from contextlib import contextmanager
-from logging_setup import setup_logger
+from backend import logging_setup
 
-logger = setup_logger('database_helper')
+logger = logging_setup.setup_logger('database_helper')
 
 
 
