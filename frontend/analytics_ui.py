@@ -5,7 +5,7 @@ import pandas as pd
 import os
 
 
-API_URL = "http://localhost:8000"
+API_URL = "https://expense-tracking-system-wx6y.onrender.com"
 
 
 def analytics_tab():
