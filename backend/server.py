@@ -1,10 +1,9 @@
 from fastapi import FastAPI, HTTPException
 from datetime import date
-import database_helper
+from backend import database_helper
 from typing import List
 from pydantic import BaseModel
-from database_helper import fetch_user_by_username
-
+from backend.database_helper import fetch_user_by_username
 app = FastAPI()
 
 
